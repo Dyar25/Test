@@ -1,0 +1,460 @@
+/*---------------------------------------------------------Main styles*/
+
+:root{
+    --second-color:white;
+    --third-color:#f5f5f5;
+    ---main-font:font2-p;
+    --main-color:#999;
+    --main-color2:#748182;
+}
+
+@font-face {
+    font-family: "font2-p";
+    src: url("../fonts/poppins/Poppins-Regular.otf");
+ }
+ 
+@font-face{
+    font-family: "font1-m-bold";
+    src: url("../fonts/montserrat/Montserrat-ExtraBold.otf");
+ }
+
+ @font-face{
+    font-family: "font1-m-regular";
+    src: url("../fonts/montserrat/Montserrat-ExtraLight.otf");
+ }
+
+
+
+ /*-------------------------------these class for every sections' title*/
+ .title{
+    font-family: font1-m-bold;
+    font-weight: 900;
+    font-size: 40px;
+ }
+/*----------------------------------------------------------navbar*/
+header{
+    background: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),url('../imgs/bg.jpg');
+    height: 100vh;
+    background-size: cover;
+}
+.nav-item{
+    font-family: var(---main-font);
+    font-size: 14px;
+    padding-inline: 11px;
+}
+.navbar-brand{
+    font-family:font1-m-bold;
+    font-weight: 800;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+a {
+    color: var(--second-color);
+}
+.nav-link{
+    color: var(--second-color);
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+    color: var(--second-color);
+    background-color: transparent;
+  }
+
+  .nav-link#Home{
+    font-family:var(--font2-m);
+    position:relative;
+  }
+  .nav-link#Home::before{
+    content: "";
+    position: absolute;
+    width:75%;
+    height: 2px;
+    bottom: 20%;
+    background-color: var(--second-color);
+  }
+
+  /*--------------------------------------------------------------------Home*/
+  .row h5{
+margin-top: 150px;
+font-family: font1-m-bold;
+  font-size: 50px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: var(--second-color);
+}
+.who2{
+    font-family: font1-m-regular;
+    font-size: 60px;
+    width: fit-content;
+    color: var(--second-color);
+}
+.who3{
+    font-family: font1-m-regular;
+    font-size: 60px;
+    font-weight: 800;
+    color: var(--second-color);
+}
+
+.who3::after {
+    content:"";
+    margin-left: 4px;
+    animation: typing 10s infinite ease-in;
+    
+  }
+
+  @keyframes typing{
+    9%{
+        content: "|";
+    }
+    10%{
+        content: "L";
+    }
+    11%{
+        content: "La";
+    }
+    12%{
+        content: "Lar";
+    }
+    13%{
+        content: "Larr";
+    }
+    14%{
+        content: "Larry";
+    }
+    15%{
+        content: "Larry D";
+    }
+    16%{
+        content: "Larry Da";
+    }
+    17%{
+        content: "Larry Dan";
+    }
+    18%{
+        content: "Larry Dani";
+    }
+    19%{
+        content: "Larry Danie";
+    }
+    20%{
+        content: "Larry Daniel";
+    }
+    49%{
+        content:"|"
+    }
+    50%{
+        content:"D"
+    }
+    51%{
+        content:"De"
+    }
+    52%{
+        content:"Dev"
+    }
+    53%{
+        content:"Deve"
+    }
+    54%{
+        content:"Devel"
+    }
+    55%{
+        content:"Develo"
+    }
+    56%{
+        content:"Develop"
+    }
+    57%{
+        content:"Develope"
+    }
+    58%{
+        content:"Developer"
+    }
+    70%{
+        content:"|"
+    }
+    71%{
+        content:"De"
+    }
+    72%{
+        content:"Des"
+    }
+    73%{
+        content:"Desi"
+    }
+    74%{
+        content:"Desig"
+    }
+    75%{
+        content:"Design"
+    }
+    76%{
+        content:"Designe"
+    }
+    77%{
+        content:"Designer"
+    }
+    78%{
+        content:"|"
+    }
+    
+  }
+
+  i{
+    font-size: 14px;
+    padding-top: 10px;
+    margin-top: 40px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.3);
+    color: var(--second-color);
+  }
+
+  /*------------------------------------------------------about*/
+
+
+.photo{
+    width: 427px;
+    height:495px;
+}
+
+.progress{
+    height: 25px;
+    
+}
+
+.col-7 h3{
+    font-family: font1-m-bold;
+}
+.col-7 h2{
+    font-family: var(---main-font);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--main-color);
+    margin-bottom: 30px;
+}
+
+.col-7 p{
+    font-family: var(---main-font);
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--main-color2);
+    margin-bottom: 50px;
+}
+
+button{
+    font-family: var(---main-font);
+    font-size: 13px;
+    color: var(--main-color2);
+    border-color: var(--main-color2);
+
+}
+
+/*---------------------------------------services*/
+
+#services{
+    background-color: var(--third-color);
+    padding-top: 50px;
+}
+
+.service-box .service-icon i {
+    line-height: 0;
+    font-size: 30px;
+  }
+  
+ .service-icon i {
+    padding-top:  35px;
+    color: black;
+    width: 70px;
+    height: 70px;
+    background-color:#f4f4f4;
+    border-radius: 50%;
+  }
+  
+  .service-icon i:hover{
+    transition: all 500ms ease;
+    color: #fff;
+    background-color: black;
+  }
+
+.service-content h2{
+    font-family: font1-m-bold ;
+    margin-bottom: 15px;
+    font-weight: 800;
+    font-size: 18px;
+}
+.service-content p{
+    font-family: var(---main-font);
+    font-size: 14px;
+    color: #748182;
+    margin-bottom: 100px;
+}
+/*---------------------------------------------------portofolio*/
+.nav-tabs .nav-item .nav-link{
+    position: relative;
+}
+.nav-tabs .nav-item .nav-link::before{
+    content: "";
+    height: 2px;
+    width: 0%;
+    bottom: 4px;
+    left: 15px;
+    background-color: black;
+    position: absolute;
+    transition: all .5s;
+
+}
+
+.nav-tabs .nav-item .nav-link.active::before{
+    width: 55%;
+}
+.nav-tabs .nav-item .nav-link,
+.nav-tabs .nav-item .nav-link {
+    color: black;
+}
+
+.tab-pane img{
+    width: 360px;
+    height: 300px;;
+}
+
+
+
+
+  
+  figcaption {
+    padding-top: 80px;
+    display:none;
+    transition: all 3s ease-in-out;
+}
+
+figure:hover figcaption{
+    background-color: rgba(255, 255, 255, 0.95);
+    display: block;
+    transition: all 5s ease-in-out;
+}
+
+figcaption i{
+    background-color: black;
+}
+
+figcaption i:hover{
+    background-color: white;
+    color: black;
+    transition: all 5s ease-in-out;
+}
+
+figcaption p,
+figcaption i {
+    font-family:font1-m-bold ;
+    font-weight: 100;
+  margin-top: 4px;
+}
+
+figcaption .transition{
+    transform: translate(0,-100%);
+    transition: all .5s ease-in-out;
+}
+
+figcaption:hover .transition {
+    transform: translate(0);
+    transition: all .5s ease-in-out;
+}
+
+/*----------------------------------------------------contact us*/
+.contact h5{
+    font-family:font1-m-bold ;
+    font-weight: 500;
+    font-size: 20px;
+    color: black;
+}
+.contact p{
+    color: var(--main-color2);
+}
+.contact i{
+    font-size: 25px;
+    margin-bottom: 15px;
+    width: 60px;
+    height: 60px;
+    background: #f4f4f4;
+    color: #1c1c1c;
+    transition: all 0.5s;
+    padding-top: 20px;
+}
+
+
+.contact i:hover{
+    background: #1c1c1c;
+    color: #eee;
+}
+
+.contact i,
+.contact h5{
+
+    margin-top: 4px;
+}
+
+.contact-method{
+    margin: 5px;
+    background-color: var(--third-color);
+    border:none;
+}
+input{
+    width: 500px;
+    height:30px;
+}
+textarea{
+    width:1016px ;
+    height: 200px;
+}
+button.contact-method{
+background-color:black;
+color: white;
+width:80px;
+height: 30px;
+margin-top:10px
+}
+
+
+/*-----------------------------------------user---*/
+.info p{
+    font-family: font1-m-bold ;
+    font-size: 25px;
+    font-weight: 1500;
+}
+.info h5{
+    font-size: 15px;
+    color: #748182;
+}
+.user .container{
+    background-color: white;
+    height: 400px;
+}
+
+.user i{
+    background-color: white ;
+    color: black;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+/*------------------------------------our team-------*/
+#ourteam{
+    background-color: var(--third-color);
+}
+
+#ourteam img{
+    width:100%;
+    height: auto;
+    margin-top: 50px;
+
+}
+
+.m-engineers{
+    position: relative;
+}
+.engineers {
+    position: absolute;
+    
+}
+
